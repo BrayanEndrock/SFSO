@@ -1,6 +1,6 @@
 <style type="text/css">
     .events-showcase__section {
-        padding-bottom: 56px;
+        padding: 0 42px 56px; 
     }
     .events-showcase__header {
         margin-bottom: 40px;
@@ -67,7 +67,7 @@
         line-height: 20px;
         text-align: center;
         text-transform: uppercase;
-        width: 440px;
+        width: 400px;
     }
     .events-showcase__view--all .events-showcase__view--all__wrapper .events-showcase__view--all__button a i {
         right: 30% !important;
@@ -78,9 +78,19 @@
         color: #000;
         transition: all 0.5s ease-in-out;
     }
+    @media screen and (min-width: 769px) {
+        .events-showcase__content .events-showcase__content--box .vc_column-inner .vc_wp_text {
+            min-height: 180px;
+        }
+    }
     @media screen and (max-width: 768px) {
+        .intermission-music {
+            width: max-content;
+            left: 206px;
+            transform: rotate(90deg) translateY(50%);
+        }
         .events-showcase__section {
-            padding-bottom: 30px;
+            padding: 0 0 30px;
         }
         .events-showcase__section .vc_column-inner.vc_custom_1659564486818 {
             margin-top: 0 !important;
